@@ -1,0 +1,275 @@
+/* Global Styles */
+
+@font-face {
+  font-family: 'Circular Std Book';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/CircularStd-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Circular Std Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/CircularStd-Bold.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Circular Std Bold';
+  margin: 0;
+  padding: 0;
+  color: #222222;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 98px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+  color: #222222;
+}
+
+p, a, button, label, textarea, input {
+  font-family: 'Circular Std Book';
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background-color: #027bff;
+  border-radius: 50px;
+  width: 100%;
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  width: fit-content;
+  margin-top: 50px;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color .3s linear;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #222222;
+}
+
+.visit {
+  text-decoration: none;
+  font-size: 20px;
+  color: #222222;
+}
+
+.visit::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  background-color: #027bff;
+  margin-top: 10px;
+  transition: all 0.3s linear;
+}
+
+.visit:hover::after {
+  width: 80px;
+}
+
+/* Nav Styles */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 15%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: white;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+}
+
+.navlink {
+  color: #222222;
+  text-decoration: none;
+  margin-left: 50px;
+  transition: color 0.2s linear;
+}
+
+.navlink:hover {
+  color: #027bff;
+}
+
+/* Hero Styles */
+
+.hero {
+  text-align: right;
+  padding: 0 15%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/herobg.jpg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: bottom left;
+  color: #222222;
+}
+
+/* About Styles */
+
+.about {
+  text-align: center;
+  padding: 0 15%;
+  margin-top: 50px;
+  padding-top: 150px
+}
+
+.about h1 {
+  margin-bottom: 50px;
+}
+
+.about p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Showroom Styles */
+
+.showroom {
+  padding-top: 150px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  color: #222222;
+}
+
+.showroom .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15% 0 50px;
+  width: 30vw;
+}
+
+.showroom .text h1 {
+  margin-bottom: 35px;
+}
+
+.showroom .text p {
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+.showroom img {
+  width: 70vw;
+  height: auto;
+}
+
+/* Laboratory Styles */
+
+.laboratory {
+  color: #222222;
+  padding-top: 150px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.laboratory .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px 0 15%;
+  width: 30vw;
+}
+
+.laboratory .text h1 {
+  margin-bottom: 35px;
+}
+
+.laboratory .text p {
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+.laboratory img {
+  width: 70vw;
+  height: auto;
+}
+
+/* Contact Styles */
+
+.contact {
+  padding-top: 150px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h1 {
+  margin-bottom: 50px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form form button {
+  margin: 45px auto 200px auto;
+}
+
+.form form input {
+  width: 400px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid #222222;
+  padding: 0 20px;
+  margin: 5px 0 20px 0;
+}
+
+.form form textarea {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #222222;
+  padding: 20px;
+  margin: 5px 0 20px 0;
+}
+
+.form form input[id="message"] {}
+
+/* Footer Styles */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 15%;
+}
+
+.icons img {
+  height: 25px;
+  margin-right: 50px;
+}
