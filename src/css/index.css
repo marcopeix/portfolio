@@ -108,7 +108,7 @@ p, a, button, label, textarea, input {
 .navlink {
   color: #222222;
   text-decoration: none;
-  margin-left: 50px;
+  margin-right: 50px;
   transition: color 0.2s linear;
 }
 
@@ -116,9 +116,20 @@ p, a, button, label, textarea, input {
   color: #027bff;
 }
 
+.lastnavlink {
+  color: #222222;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+.lastnavlink:hover {
+  color: #027bff;
+}
+
 /* Hero Styles */
 
 .hero {
+  margin-top: 100px;
   text-align: right;
   padding: 0 15%;
   height: 680px;
@@ -128,7 +139,7 @@ p, a, button, label, textarea, input {
   background-image: url("../images/herobg.jpg");
   background-repeat: no-repeat;
   background-size: 70%;
-  background-position: bottom left;
+  background-position: left;
   color: #222222;
 }
 
@@ -136,9 +147,8 @@ p, a, button, label, textarea, input {
 
 .about {
   text-align: center;
-  padding: 0 15%;
+  padding: 150px 15% 0 15%;
   margin-top: 50px;
-  padding-top: 150px
 }
 
 .about h1 {
@@ -272,4 +282,127 @@ footer {
 .icons img {
   height: 25px;
   margin-right: 50px;
+}
+
+.icons .last {
+  margin-right: 0px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1130px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 980px) {
+  .nav {
+    padding: 0 5%;
+  }
+  .about {
+    padding: 150px 5% 0 5%;
+  }
+  .showroom .text {
+    padding: 0 5% 0 50px;
+  }
+  .laboratory .text {
+    padding: 0 50px 0 5%;
+  }
+  footer {
+    flex-direction: column;
+    padding: 0 5% 50px 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  .nav {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 10px 5%;
+    font-size: 15px;
+  }
+  .nav img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .hero {
+    background-image: url("../images/herobgres.jpg");
+    background-position: left;
+    background-size: cover;
+    background-position: -400px;
+  }
+  .showroom {
+    flex-direction: column;
+  }
+  .showroom .text {
+    width: 100vw;
+  }
+  .showroom img {
+    width: 90vw;
+  }
+  .laboratory {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .laboratory img {
+    width: 90vw;
+  }
+  .laboratory .text {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 470px) {
+  .button {
+    font-size: 15px;
+  }
+  .nav {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .about p {
+    width: 100%;
+    font-size: 15px;
+  }
+  .showroom .text p {
+    font-size: 15px;
+  }
+  .showroom .text a {
+    font-size: 15px;
+  }
+  .laboratory .text p {
+    font-size: 15px;
+  }
+  .laboratory .text a {
+    font-size: 15px;
+  }
+  .form form input {
+    width: 300px;
+    height: 60px;
+  }
+  .form form textarea {
+    width: 300px;
+  }
+  footer .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 50px;
+  }
+  footer .links .navlink {
+    margin: 5px 0;
+  }
 }
