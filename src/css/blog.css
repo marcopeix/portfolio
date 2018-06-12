@@ -63,3 +63,22 @@
   line-height: 25px;
   overflow-x: scroll;
 }
+
+/* Media Queries */
+
+@media (max-width: 980px) {
+  .all-posts {
+    padding: 150px 5%;
+  }
+  .blog-post-link {
+    padding: 25px;
+    margin-bottom: 30px;
+  }
+  .link-content h3 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .link-content .date {
+    margin-bottom: 20px;
+  }
+}

@@ -37,7 +37,7 @@ export default () => (
         to="/blog">
           Blog
         </Link>
-        <a data-scroll href="/#contact" className="navlink">Contact</a>
+        <a data-scroll href="#contact" className="lastnavlink">Contact</a>
       </div>
     </div>
 
@@ -77,7 +77,7 @@ export default () => (
           <img src={medium}></img>
         </a>
         <a href="https://www.linkedin.com/in/marco-peixeiro/" target="_blank">
-          <img src={linkedin}></img>
+          <img className="last" src={linkedin}></img>
         </a>
       </div>
       <div className="links">
@@ -96,7 +96,7 @@ export default () => (
         to="/blog">
           Blog
         </Link>
-        <a data-scroll href="/#contact" className="navlink">Contact</a>
+        <a data-scroll href="#contact" className="lastnavlink">Contact</a>
       </div>
     </footer>
 
