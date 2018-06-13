@@ -37,7 +37,7 @@ export default () => (
         to="/blog">
           Blog
         </Link>
-        <a data-scroll href="#contact" className="lastnavlink">Contact</a>
+        <a data-scroll href="/#contact" className="lastnavlink">Contact</a>
       </div>
     </div>
 
