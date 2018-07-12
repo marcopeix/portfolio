@@ -77,7 +77,7 @@ export default () => (
     <div id="contact" className="contact">
       <h1>Let's work together</h1>
       <div className="form">
-        <form>
+        <form name="contact" method="POST" netlify>
           <label for="name">Name</label>
           <input type="text" id="name" name="name"></input>
           <label for="email">Email Address</label>
