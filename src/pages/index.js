@@ -77,14 +77,14 @@ export default () => (
     <div id="contact" className="contact">
       <h1>Let's work together</h1>
       <div className="form">
-        <form name="contact" method="POST" netlify>
+        <form name="contact" method="POST" data-netlify="true">
           <label for="name">Name</label>
           <input type="text" id="name" name="name"></input>
           <label for="email">Email Address</label>
           <input type="email" id="email" name="email"></input>
           <label for="message">Message</label>
           <textarea id="message" name="message"></textarea>
-          <button className="button">Send</button>
+          <button type="submit" className="button">Send</button>
         </form>
       </div>
     </div>
